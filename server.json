@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.aiwaiverdesk/aiwaiverdesk-mcp",
+  "description": "AI Governance Waiver Desk is a paid remote MCP approval gate for AI use cases, model risk, exception reasons, owners, approvers, expiry dates, and governance receipts.",
+  "version": "1.0.0",
+  "website_url": "https://aiwaiverdesk.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/ai-governance-waiver-desk-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aiwaiverdesk.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "AI Governance Waiver Desk MCP",
+      "server_card_url": "https://aiwaiverdesk.clauxel.com/server-card.json"
+    }
+  }
+}
