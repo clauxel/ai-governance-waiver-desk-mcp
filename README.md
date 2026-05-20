@@ -2,47 +2,44 @@
 
 Approve AI exceptions with expiry dates, owners, and receipts.
 
-Paid remote MCP for AI governance waiver checks, exception approvals, expiry review, allow/review/deny JSON, and audit receipts.
+AI Governance Waiver Desk is a paid remote MCP approval gate for AI use cases, model risk, exception reasons, owners, approvers, expiry dates, and governance receipts.
 
-## Public Endpoints
+This is a public documentation project for AI Governance Waiver Desk MCP. The structure is modeled after the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and public-safe architecture notes.
 
-- Website: https://aiwaiverdesk.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://aiwaiverdesk.clauxel.com/mcp
+## Start Here
+
+- Website: https://aiwaiverdesk.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=aiwaiverdesk_public_docs&utm_content=readme_primary_home
+- Pricing: https://aiwaiverdesk.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=aiwaiverdesk_public_docs&utm_content=readme_pricing
+- Checkout: https://aiwaiverdesk.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=aiwaiverdesk_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://aiwaiverdesk.clauxel.com/mcp
 - Server card: https://aiwaiverdesk.clauxel.com/server-card.json
 - Registry name: `com.clauxel.aiwaiverdesk/aiwaiverdesk-mcp`
+- Tools: `evaluate_ai_waiver`, `request_policy_exception`, `check_waiver_expiry`, `issue_waiver_receipt`, `export_governance_audit`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+AI governance, risk, compliance, product, and platform teams.
 
-## Tools
+## Capabilities
 
-- `evaluate_ai_waiver`
-- `request_policy_exception`
-- `check_waiver_expiry`
-- `issue_waiver_receipt`
-- `export_governance_audit`
+- waiver policy queue
+- risk level review
+- expiry conditions
+- reviewer signoff
+- allow/review/deny JSON
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://aiwaiverdesk.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://aiwaiverdesk.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://aiwaiverdesk.clauxel.com/server-card.json
-- MCP endpoint: https://aiwaiverdesk.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
