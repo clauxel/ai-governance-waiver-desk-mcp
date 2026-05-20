@@ -1,15 +1,12 @@
 # AI Governance Waiver Desk MCP
 
-AI Governance Waiver Desk is a paid remote MCP approval gate for AI use cases, model risk, exception reasons, owners, approvers, expiry dates, and governance receipts.
+Paid remote MCP for AI governance waiver checks, exception approvals, expiry review, allow/review/deny JSON, and audit receipts.
 
 Website: https://aiwaiverdesk.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: AI governance waiver MCP
-Type: MCP
-Default plan: Team
 MCP endpoint: https://aiwaiverdesk.clauxel.com/mcp
 Server card: https://aiwaiverdesk.clauxel.com/server-card.json
-Registry name: com.clauxel.aiwaiverdesk/aiwaiverdesk-mcp
-Tools: evaluate_ai_waiver, request_policy_exception, check_waiver_expiry, issue_waiver_receipt, export_governance_audit
+Docs: https://github.com/clauxel/ai-governance-waiver-desk-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: Approve AI exceptions with expiry dates, owners, and receipts.
+Authentication: Bearer token required for production use.
+Tools: evaluate_ai_waiver, request_policy_exception, check_waiver_expiry, issue_waiver_receipt, export_governance_audit
